@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tishan Kolla - Sri Lankan in New York</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        :root {
+            --primary-cyan: #00CFFF;
+            --primary-pink: #FF3EBF;
+            --primary-white: #FFFFFF;
+            --secondary-blue: #62D8F5;
+            --secondary-yellow: #FFD700;
+            --secondary-brown: #4E2900;
+            --accent-blue: #004E80;
+            --accent-glow: rgba(255, 255, 255, 0.5);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, var(--primary-cyan), var(--primary-pink));
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-white);
+        }
+
+        .profile {
+            position: relative;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--primary-white);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-name {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-top: 1rem;
+        }
+
+        .profile-tagline {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-top: 0.5rem;
+        }
+
+        .photo-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 1rem;
+            margin-top: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--primary-white);
+            color: var(--secondary-brown);
+            padding: 0.8rem 1.5rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .button:hover {
+            background-color: var(--secondary-yellow);
+            color: var(--accent-blue);
+        }
+
+        .button-icon {
+            margin-left: 0.5rem;
+        }
+
+        .collab-container {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .collab-email {
+            color: var(--secondary-yellow);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .collab-email:hover {
+            color: var(--accent-glow);
+        }
+
+        @media (min-width: 768px) {
+            .profile-image {
+                width: 150px;
+                height: 150px;
+            }
+
+            .profile-name {
+                font-size: 2.5rem;
+            }
+
+            .profile-tagline {
+                font-size: 1.5rem;
+            }
+
+            .button-container {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .button {
+                margin-bottom: 0;
+                margin-right: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile">
+        <img src="/api/placeholder/120/120" alt="Profile Image" class="profile-image">
+        <h1 class="profile-name">Tishan Kolla</h1>
+        <p class="profile-tagline">Sri Lankan in New York</p>
+    </div>
+
+    <div class="photo-container">
+        <img src="/api/placeholder/500/300" alt="New York Cityscape">
+    </div>
+
+    <div class="button-container">
+        <a href="#" class="button">Find me on Instagram<span class="button-icon">→</span></a>
+        <a href="#" class="button">Find me on YouTube<span class="button-icon">→</span></a>
+        <a href="#" class="button">Find me on TikTok<span class="button-icon">→</span></a>
+    </div>
+
+    <div class="collab-container">
+        <p>For collaborations, email: <a href="mailto:collab@tishankolla.com"
+                class="collab-email">collab@tishankolla.com</a></p>
+    </div>
+</body>
+
+</html>
