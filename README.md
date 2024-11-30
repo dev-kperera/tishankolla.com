@@ -1,7 +1,5 @@
 # tishankolla.com
 
-[(GitHub Pages)](https://dev-kperera.github.io/tishankolla.com/)
-
 # Theme
 	Primary Colors:
 		Bright Cyan (#00CFFF) - Used for the main background.
